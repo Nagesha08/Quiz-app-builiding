@@ -1,0 +1,341 @@
+import { Question } from '../types/quiz';
+
+export const questions: Question[] = [
+  // HTML Questions
+  {
+    id: 'html-1',
+    category: 'HTML',
+    difficulty: 'easy',
+    points: 10,
+    question: 'Which HTML element is used to define the title of a document?',
+    options: ['<meta>', '<title>', '<head>', '<header>'],
+    correctAnswer: 1,
+    explanation: 'The <title> element defines the title of the document, which appears in the browser tab and search results.'
+  },
+  {
+    id: 'html-2',
+    category: 'HTML',
+    difficulty: 'easy',
+    points: 10,
+    question: 'What does HTML stand for?',
+    options: ['Hyper Text Markup Language', 'High Tech Modern Language', 'Home Tool Markup Language', 'Hyperlink and Text Markup Language'],
+    correctAnswer: 0,
+    explanation: 'HTML stands for Hyper Text Markup Language, the standard markup language for creating web pages.'
+  },
+  {
+    id: 'html-3',
+    category: 'HTML',
+    difficulty: 'medium',
+    points: 15,
+    question: 'Which attribute is used to specify that an input field must be filled out?',
+    options: ['validate', 'required', 'mandatory', 'placeholder'],
+    correctAnswer: 1,
+    explanation: 'The "required" attribute specifies that an input field must be filled out before submitting the form.'
+  },
+  {
+    id: 'html-4',
+    category: 'HTML',
+    difficulty: 'medium',
+    points: 15,
+    question: 'What is the correct way to create a hyperlink in HTML?',
+    options: ['<link url="http://example.com">Link</link>', '<a href="http://example.com">Link</a>', '<hyperlink>http://example.com</hyperlink>', '<url>http://example.com</url>'],
+    correctAnswer: 1,
+    explanation: 'The <a> element with the href attribute is used to create hyperlinks in HTML.'
+  },
+  {
+    id: 'html-5',
+    category: 'HTML',
+    difficulty: 'hard',
+    points: 20,
+    question: 'Which HTML5 semantic element represents a section of a page that contains navigation links?',
+    options: ['<navigation>', '<nav>', '<menu>', '<links>'],
+    correctAnswer: 1,
+    explanation: 'The <nav> element represents a section of navigation links within a document.'
+  },
+
+  // CSS Questions
+  {
+    id: 'css-1',
+    category: 'CSS',
+    difficulty: 'easy',
+    points: 10,
+    question: 'Which CSS property is used to change the text color of an element?',
+    options: ['font-color', 'text-color', 'color', 'foreground-color'],
+    correctAnswer: 2,
+    explanation: 'The "color" property is used to set the color of text in CSS.'
+  },
+  {
+    id: 'css-2',
+    category: 'CSS',
+    difficulty: 'easy',
+    points: 10,
+    question: 'How do you select an element with id "demo" in CSS?',
+    options: ['.demo', '#demo', 'demo', '*demo'],
+    correctAnswer: 1,
+    explanation: 'The # symbol is used to select elements by their ID in CSS.'
+  },
+  {
+    id: 'css-3',
+    category: 'CSS',
+    difficulty: 'medium',
+    points: 15,
+    question: 'Which CSS property is used to create space between the element\'s border and inner content?',
+    options: ['margin', 'padding', 'border-spacing', 'spacing'],
+    correctAnswer: 1,
+    explanation: 'Padding creates space between an element\'s border and its inner content, while margin creates space outside the border.'
+  },
+  {
+    id: 'css-4',
+    category: 'CSS',
+    difficulty: 'medium',
+    points: 15,
+    question: 'What does CSS stand for?',
+    options: ['Computer Style Sheets', 'Creative Style Sheets', 'Cascading Style Sheets', 'Colorful Style Sheets'],
+    correctAnswer: 2,
+    explanation: 'CSS stands for Cascading Style Sheets, used for describing the presentation of web documents.'
+  },
+  {
+    id: 'css-5',
+    category: 'CSS',
+    difficulty: 'hard',
+    points: 20,
+    question: 'Which CSS display value allows an element to behave like a block element but flow inline?',
+    options: ['inline', 'block', 'inline-block', 'flex'],
+    correctAnswer: 2,
+    explanation: 'The "inline-block" display value allows elements to sit next to each other while still respecting width and height properties.'
+  },
+
+  // JavaScript Questions
+  {
+    id: 'js-1',
+    category: 'JavaScript',
+    difficulty: 'easy',
+    points: 10,
+    question: 'Which method is used to add an element to the end of an array in JavaScript?',
+    options: ['append()', 'push()', 'add()', 'insert()'],
+    correctAnswer: 1,
+    explanation: 'The push() method adds one or more elements to the end of an array and returns the new length.'
+  },
+  {
+    id: 'js-2',
+    category: 'JavaScript',
+    difficulty: 'easy',
+    points: 10,
+    question: 'How do you declare a variable in JavaScript?',
+    options: ['variable myVar;', 'var myVar;', 'declare myVar;', 'v myVar;'],
+    correctAnswer: 1,
+    explanation: 'Variables in JavaScript can be declared using var, let, or const keywords.'
+  },
+  {
+    id: 'js-3',
+    category: 'JavaScript',
+    difficulty: 'medium',
+    points: 15,
+    question: 'What is the difference between "==" and "===" in JavaScript?',
+    options: ['No difference', '== checks type, === checks value', '== checks value, === checks type and value', '=== is deprecated'],
+    correctAnswer: 2,
+    explanation: '== performs type coercion and compares values, while === compares both type and value without coercion.'
+  },
+  {
+    id: 'js-4',
+    category: 'JavaScript',
+    difficulty: 'medium',
+    points: 15,
+    question: 'Which JavaScript method is used to remove the last element from an array?',
+    options: ['pop()', 'remove()', 'delete()', 'splice()'],
+    correctAnswer: 0,
+    explanation: 'The pop() method removes and returns the last element from an array.'
+  },
+  {
+    id: 'js-5',
+    category: 'JavaScript',
+    difficulty: 'hard',
+    points: 20,
+    question: 'What will be the output of: console.log(typeof null)?',
+    options: ['"null"', '"undefined"', '"object"', '"boolean"'],
+    correctAnswer: 2,
+    explanation: 'This is a well-known bug in JavaScript. typeof null returns "object" instead of "null".'
+  },
+
+  // TypeScript Questions
+  {
+    id: 'ts-1',
+    category: 'TypeScript',
+    difficulty: 'easy',
+    points: 10,
+    question: 'What is TypeScript?',
+    options: ['A JavaScript framework', 'A superset of JavaScript', 'A database language', 'A CSS preprocessor'],
+    correctAnswer: 1,
+    explanation: 'TypeScript is a strongly typed superset of JavaScript that compiles to plain JavaScript.'
+  },
+  {
+    id: 'ts-2',
+    category: 'TypeScript',
+    difficulty: 'easy',
+    points: 10,
+    question: 'How do you specify that a variable is a string in TypeScript?',
+    options: ['let name = string;', 'let name: string;', 'let name as string;', 'let string name;'],
+    correctAnswer: 1,
+    explanation: 'Type annotations in TypeScript use the colon syntax: variableName: type'
+  },
+  {
+    id: 'ts-3',
+    category: 'TypeScript',
+    difficulty: 'medium',
+    points: 15,
+    question: 'What is an interface in TypeScript?',
+    options: ['A class definition', 'A contract for object structure', 'A function type', 'A variable declaration'],
+    correctAnswer: 1,
+    explanation: 'An interface in TypeScript defines a contract for the structure of an object, specifying what properties and methods it should have.'
+  },
+  {
+    id: 'ts-4',
+    category: 'TypeScript',
+    difficulty: 'medium',
+    points: 15,
+    question: 'Which TypeScript feature allows you to define a variable that can be one of several types?',
+    options: ['Union types', 'Intersection types', 'Generic types', 'Conditional types'],
+    correctAnswer: 0,
+    explanation: 'Union types (using |) allow a variable to be one of several types, e.g., string | number.'
+  },
+  {
+    id: 'ts-5',
+    category: 'TypeScript',
+    difficulty: 'hard',
+    points: 20,
+    question: 'What does the "readonly" modifier do in TypeScript?',
+    options: ['Makes a property immutable after initialization', 'Makes a property private', 'Makes a property static', 'Makes a property optional'],
+    correctAnswer: 0,
+    explanation: 'The readonly modifier ensures that a property can only be assigned during initialization and cannot be changed afterward.'
+  },
+
+  // SQL Questions
+  {
+    id: 'sql-1',
+    category: 'SQL',
+    difficulty: 'easy',
+    points: 10,
+    question: 'Which SQL statement is used to extract data from a database?',
+    options: ['GET', 'SELECT', 'EXTRACT', 'PULL'],
+    correctAnswer: 1,
+    explanation: 'The SELECT statement is used to query and retrieve data from a database.'
+  },
+  {
+    id: 'sql-2',
+    category: 'SQL',
+    difficulty: 'easy',
+    points: 10,
+    question: 'Which SQL clause is used to filter records?',
+    options: ['FILTER', 'WHERE', 'HAVING', 'SELECT'],
+    correctAnswer: 1,
+    explanation: 'The WHERE clause is used to filter records and extract only those that fulfill a specified condition.'
+  },
+  {
+    id: 'sql-3',
+    category: 'SQL',
+    difficulty: 'medium',
+    points: 15,
+    question: 'What does SQL stand for?',
+    options: ['Strong Query Language', 'Structured Query Language', 'Simple Query Language', 'Standard Query Language'],
+    correctAnswer: 1,
+    explanation: 'SQL stands for Structured Query Language, used for managing and manipulating relational databases.'
+  },
+  {
+    id: 'sql-4',
+    category: 'SQL',
+    difficulty: 'medium',
+    points: 15,
+    question: 'Which SQL JOIN returns records that have matching values in both tables?',
+    options: ['LEFT JOIN', 'RIGHT JOIN', 'INNER JOIN', 'OUTER JOIN'],
+    correctAnswer: 2,
+    explanation: 'INNER JOIN returns only the records that have matching values in both tables.'
+  },
+  {
+    id: 'sql-5',
+    category: 'SQL',
+    difficulty: 'hard',
+    points: 20,
+    question: 'What is the difference between DELETE and TRUNCATE?',
+    options: ['No difference', 'DELETE is faster', 'TRUNCATE removes all rows and resets identity', 'DELETE resets identity'],
+    correctAnswer: 2,
+    explanation: 'TRUNCATE removes all rows from a table and resets identity counters, while DELETE can remove specific rows and maintains identity values.'
+  },
+
+  // PHP Questions
+  {
+    id: 'php-1',
+    category: 'PHP',
+    difficulty: 'easy',
+    points: 10,
+    question: 'How do you start a PHP script?',
+    options: ['<script>', '<?php', '<php>', '<?'],
+    correctAnswer: 1,
+    explanation: 'PHP scripts start with the opening tag <?php and end with ?> (though the closing tag is optional at the end of files).'
+  },
+  {
+    id: 'php-2',
+    category: 'PHP',
+    difficulty: 'easy',
+    points: 10,
+    question: 'Which symbol is used to declare a variable in PHP?',
+    options: ['#', '@', '$', '%'],
+    correctAnswer: 2,
+    explanation: 'In PHP, variables are declared with the dollar sign ($) followed by the variable name.'
+  },
+  {
+    id: 'php-3',
+    category: 'PHP',
+    difficulty: 'medium',
+    points: 15,
+    question: 'What does PHP stand for?',
+    options: ['Personal Home Page', 'PHP: Hypertext Preprocessor', 'Private Home Page', 'Professional Hypertext Processor'],
+    correctAnswer: 1,
+    explanation: 'PHP originally stood for Personal Home Page, but now stands for PHP: Hypertext Preprocessor (a recursive acronym).'
+  },
+  {
+    id: 'php-4',
+    category: 'PHP',
+    difficulty: 'medium',
+    points: 15,
+    question: 'Which PHP function is used to include a file?',
+    options: ['import()', 'include()', 'require()', 'Both include() and require()'],
+    correctAnswer: 3,
+    explanation: 'Both include() and require() can be used to include files in PHP. require() will cause a fatal error if the file is not found, while include() will only produce a warning.'
+  },
+  {
+    id: 'php-5',
+    category: 'PHP',
+    difficulty: 'hard',
+    points: 20,
+    question: 'What is the difference between "==" and "===" in PHP?',
+    options: ['No difference', '== checks type, === checks value', '== checks value, === checks type and value', '=== is deprecated'],
+    correctAnswer: 2,
+    explanation: 'Similar to JavaScript, == performs type juggling and compares values, while === compares both type and value without conversion.'
+  }
+];
+
+export const categories = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'SQL', 'PHP'];
+
+export const getCategoryIcon = (category: string): string => {
+  const icons: { [key: string]: string } = {
+    'HTML': '🌐',
+    'CSS': '🎨',
+    'JavaScript': '⚡',
+    'TypeScript': '🔷',
+    'SQL': '🗄️',
+    'PHP': '🐘'
+  };
+  return icons[category] || '📝';
+};
+
+export const getCategoryColor = (category: string): string => {
+  const colors: { [key: string]: string } = {
+    'HTML': 'from-orange-500 to-red-500',
+    'CSS': 'from-blue-500 to-indigo-500',
+    'JavaScript': 'from-yellow-400 to-orange-500',
+    'TypeScript': 'from-blue-600 to-blue-800',
+    'SQL': 'from-green-500 to-teal-500',
+    'PHP': 'from-purple-500 to-indigo-600'
+  };
+  return colors[category] || 'from-gray-500 to-gray-700';
+};
